@@ -181,7 +181,7 @@
                         android:layout_weight="0.00" />
 
                     <TextView
-                        android:text="Walnut Red Cheese"
+                        android:text="Walnut Red Cheese double"
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
                         android:id="@+id/textView7"
@@ -240,7 +240,7 @@
                         android:layout_weight="0.04" />
 
                     <TextView
-                        android:text="Walnuts for No One"
+                        android:text="Walnuts for White cheese"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView9"
