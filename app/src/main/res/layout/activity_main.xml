@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.app1.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:gravity="center_horizontal"
+        android:gravity="center"
+        android:weightSum="1"
+        android:background="@color/Gray1"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            tools:background="@color/Gray1">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:id="@+id/button"
+                android:background="@drawable/order_button" />
+
+            <TextView
+                android:text="Salads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="0.01"
+                tools:gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:id="@+id/button2"
+                android:background="@drawable/send_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="0.29"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="87dp"
+                android:layout_height="75dp"
+                android:weightSum="1"
+                android:layout_weight="0.57">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/button3"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/appetizer_button" />
+
+                <TextView
+                    android:text="Appetizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="106dp"
+                android:layout_height="76dp"
+                android:weightSum="1"
+                android:layout_weight="0.67">
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/button4"
+                    android:background="@drawable/salad_button"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:text="Salad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="0.05"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="130dp"
+                android:layout_height="78dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="99dp"
+                    android:layout_height="57dp"
+                    android:id="@+id/button5"
+                    android:background="@drawable/pasta_button"
+                    android:layout_weight="0.56"
+                    android:gravity="center_vertical|center" />
+
+                <TextView
+                    android:text="Pasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.74"
+            android:fillViewport="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="54dp"
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/s1_button"
+                        android:id="@+id/imageView" />
+
+                    <TextView
+                        android:text="Walnut Blue Cheese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0.91"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/button6"
+                        android:background="@drawable/price_image"
+                        android:elevation="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/s2_button"
+                        android:id="@+id/imageView2"
+                        android:layout_width="38dp"
+                        android:layout_weight="0.00" />
+
+                    <TextView
+                        android:text="Walnut Red Cheese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:id="@+id/textView7"
+                        android:layout_weight="0.01"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:id="@+id/button7"
+                        android:background="@drawable/price_image"
+                        android:layout_weight="0.00"
+                        android:gravity="center_horizontal"
+                        android:layout_height="32dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_height="54dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/s3_button"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="0.08" />
+
+                    <TextView
+                        android:text="Walnuts Kaka Brown Cheese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="63dp"
+                        android:layout_height="34dp"
+                        android:id="@+id/button8"
+                        android:background="@drawable/price_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/s4_button"
+                        android:id="@+id/imageView4"
+                        android:layout_weight="0.04" />
+
+                    <TextView
+                        android:text="Walnuts for No One"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" />
+
+                    <Button
+                        android:layout_width="52dp"
+                        android:layout_height="37dp"
+                        android:id="@+id/button9"
+                        android:background="@drawable/price_image"
+                        android:layout_weight="0.07" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
